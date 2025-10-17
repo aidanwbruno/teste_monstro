@@ -1,0 +1,59 @@
+:root{
+  --monster-accent:   #61bcce; /* ponto inicial */
+  --monster-accent-2: #3b82f6; /* azul “royal” */
+}
+.bg-dark-2{ background: #101114; }
+.text-gradient{
+  background: linear-gradient(90deg, var(--monster-accent), var(--monster-accent-2));
+  -webkit-background-clip:text; background-clip:text; color: transparent;
+}
+.blue-text{
+    color: #61bcce;
+    text-align: center;
+    font-size: 22px;
+    line-height: 20px;
+}
+.subtitulo{
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    margin-top: -10px;
+}
+.text-secondary-emphasis{
+    text-align:center;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: var(--bs-nav-pills-link-active-color);
+  background-color:  #61bcce;
+}
+.button-color:{
+    background-color:  #61bcce!important;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #61bcce;
+  --bs-btn-border-color: #61bcce;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0b5ed7;
+  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #0a58ca;
+  --bs-btn-active-border-color: #0a53be;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #0d6efd;
+  --bs-btn-disabled-border-color: #0d6efd;
+}
+
+.monster-frame{ border: 1px solid rgba(255,255,255,.08); box-shadow: 0 0 0 1px rgba(124,77,255,.08), 0 10px 30px rgba(0,0,0,.6); }
+.monster-option{ padding:.6rem .75rem; border-radius:.6rem; transition: transform .08s ease, background .2s ease; cursor:pointer; }
+.monster-option:hover{ background: rgba(124,77,255,.08); transform: translateY(-1px); }
+.monster-pulse{ position:relative; }
+.monster-pulse::after{ content:''; position:absolute; inset:-4px; border-radius:12px; filter: blur(10px);
+  background: radial-gradient(60% 60% at 50% 50%, rgba(124,77,255,.5), transparent);
+  opacity:.6; z-index:-1;
+}
+.monster-blur{ backdrop-filter: blur(8px); background: rgba(0,0,0,.6); }
+.prose p, .prose pre{ line-height:1.7; color:#cbd1d8; }
